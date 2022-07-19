@@ -1,0 +1,24 @@
+<form *ngIf="showAddEmployee" class="form-control add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name">Name : </label>
+        <input type="text" [(ngModel)]="name" name="name" id="name" placeholder="Enter employee Name"/>
+    </div>
+    <div class="form-control">
+        <label for="phoneno">Phoneno : </label>
+        <input type="number" [(ngModel)]="phoneno" name="phoneno" id="phoneno" placeholder="9857463215"/>
+    </div>
+    <div class="form-control">
+        <label for="email">Email : </label>
+        <input type="text" [(ngModel)]="email" name="email" id="email" placeholder="Enter your email"/>
+    </div>
+    <div class="form-control">
+        <label for="profession">Profession : </label>
+        <input type="text" [(ngModel)]="profession" name="profession" id="profession" placeholder="Enter profession"/>
+    </div>
+    <div class="form-control form-control-check">
+        <label for="Project">Project : </label>
+        <input type="checkbox" name="Project" [(ngModel)]="project" id="Project"/>
+    </div>
+    {{name}}
+    <input type="submit" value="Save Employee" class="btn-block">
+</form>

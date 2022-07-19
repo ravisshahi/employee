@@ -1,0 +1,8 @@
+<app-add-employee (onAddEmployee)="onAddEmployee($event)"></app-add-employee>
+
+<app-employee-item 
+    *ngFor="let employee of employee"
+    [employee]="employee"
+    (onDeleteEmployee)="deleteEmployee(employee)"
+    (onToggleProject) = "onToggleProject(employee)">{{employee.name}}
+</app-employee-item>

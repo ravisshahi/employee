@@ -1,0 +1,10 @@
+<div *ngIf = "employee" class = "employee" [ngClass] = "{Project : employee.Project}" (dblclick)="projectToggle(employee)">
+    <h3>
+        {{employee.name}}
+        <button type="button" class="btn btn-success" (dblclick)="onDelete(employee)">Delete</button>
+    </h3>
+    
+    <p>{{employee.email}}</p>
+    <p>{{employee.phoneno}}</p>
+    <p>{{employee.profession}}</p>
+</div>
